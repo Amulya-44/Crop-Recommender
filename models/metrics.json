@@ -1,0 +1,70 @@
+{
+  "best_model": "Gradient Boosting",
+  "test_accuracy": 0.775,
+  "comparison": [
+    {
+      "algorithm": "Gradient Boosting",
+      "cv_accuracy": 0.7818,
+      "train_accuracy": 0.9896,
+      "validation_accuracy": 0.7727,
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 2,
+        "n_estimators": 100
+      }
+    },
+    {
+      "algorithm": "Random Forest",
+      "cv_accuracy": 0.8065,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 0.7682,
+      "best_params": {
+        "max_depth": 20,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1,
+        "n_estimators": 200
+      }
+    },
+    {
+      "algorithm": "SVM",
+      "cv_accuracy": 0.7688,
+      "train_accuracy": 0.8071,
+      "validation_accuracy": 0.75,
+      "best_params": {
+        "model__C": 10,
+        "model__kernel": "rbf"
+      }
+    },
+    {
+      "algorithm": "Extra Trees",
+      "cv_accuracy": 0.7812,
+      "train_accuracy": 0.9929,
+      "validation_accuracy": 0.7273,
+      "best_params": {
+        "max_depth": 20,
+        "max_features": "sqrt",
+        "min_samples_leaf": 2,
+        "n_estimators": 100
+      }
+    },
+    {
+      "algorithm": "KNN",
+      "cv_accuracy": 0.7526,
+      "train_accuracy": 1.0,
+      "validation_accuracy": 0.7227,
+      "best_params": {
+        "model__n_neighbors": 7,
+        "model__weights": "distance"
+      }
+    },
+    {
+      "algorithm": "Logistic Regression",
+      "cv_accuracy": 0.6864,
+      "train_accuracy": 0.7169,
+      "validation_accuracy": 0.6636,
+      "best_params": {
+        "model__C": 10
+      }
+    }
+  ]
+}
