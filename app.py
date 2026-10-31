@@ -15,10 +15,12 @@ st.set_page_config(page_title="Crop Recommender", page_icon="🌾", layout="wide
 
 @st.cache_resource(show_spinner="Loading model...")
 def load_model():
-    if not Path(MODEL_PATH).exists():  # first run on a fresh clone
-        with st.spinner("No saved model found - training one (takes a minute)..."):
+    try:
+        return joblib.load(MODEL_PATH)
+    except Exception:  # missing file, or saved with a different scikit-learn version
+        with st.spinner("Saved model unavailable - retraining (takes a few minutes)..."):
             train_model()
-    return joblib.load(MODEL_PATH)
+        return joblib.load(MODEL_PATH)
 
 
 @st.cache_data
