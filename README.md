@@ -2,7 +2,12 @@
 
 A machine-learning project that recommends the most suitable crop from soil measurements, with an interactive **Streamlit** web app.
 
-**[Live demo](https://your-app-name.streamlit.app)** · *(replace with your deployed link)*
+**[Live demo](https://crop-recommender-amulya.streamlit.app/)**
+
+## Output
+
+<img width="906" height="408" alt="image" src="https://github.com/user-attachments/assets/310be688-862f-4b21-b0a6-aee82d4baeb7" />
+
 
 ## Overview
 Given a soil sample's **Nitrogen (N), Phosphorus (P), Potassium (K)** and **pH**, the model predicts which of **22 crops** (rice, maize, banana, coffee, apple, …) fits best, and shows the top-3 candidates with confidence scores.
@@ -41,7 +46,7 @@ Given a soil sample's **Nitrogen (N), Phosphorus (P), Potassium (K)** and **pH**
 ## Run locally
 ```bash
 git clone https://github.com/Amulya-44/crop-recommender.git
-cd crop-recommender
+cd Crop-Recommender
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 streamlit run app.py
