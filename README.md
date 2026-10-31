@@ -40,7 +40,7 @@ Given a soil sample's **Nitrogen (N), Phosphorus (P), Potassium (K)** and **pH**
 
 ## Run locally
 ```bash
-git clone https://github.com/<your-username>/crop-recommender.git
+git clone https://github.com/Amulya-44/crop-recommender.git
 cd crop-recommender
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
